@@ -1,0 +1,1567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://z80-heaven.wikidot.com/opcode-reference-chart -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Opcode Reference Chart - z80 Heaven</title>
+    
+    
+    
+    <script src="./Opcode Reference Chart - z80 Heaven_files/rules-p-edL3gsnUjJzw-.js" async=""></script><script type="text/javascript" async="" src="./Opcode Reference Chart - z80 Heaven_files/quant.js"></script><script type="text/javascript" async="" src="./Opcode Reference Chart - z80 Heaven_files/dc.js"></script><script type="text/javascript" src="./Opcode Reference Chart - z80 Heaven_files/init.combined.js"></script>
+    <script type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "z80-heaven.wikidot.com";
+        WIKIREQUEST.info.siteId = 4228;
+        WIKIREQUEST.info.siteUnixName = "z80-heaven";
+        WIKIREQUEST.info.categoryId = 23766;
+        WIKIREQUEST.info.themeId = 1203;
+        WIKIREQUEST.info.requestPageName = "opcode-reference-chart";
+        OZONE.request.timestamp = 1594666615;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "opcode-reference-chart";
+        WIKIREQUEST.info.pageId = 16780801;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+        var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    </script>
+    
+    
+
+
+    
+        <script type="text/javascript">
+    
+        require.config({
+            baseUrl: URL_STATIC + '/common--javascript',
+            paths: {
+                'jquery.ui': 'jquery-ui.min',
+                'jquery.form': 'jquery.form'
+            }
+        });
+    
+    </script>
+    
+    
+            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en">
+    <script type="text/javascript" src="./Opcode Reference Chart - z80 Heaven_files/WIKIDOT.combined.js"></script>
+        
+    
+    <style type="text/css">
+body {
+  background-position: center 24px;
+}
+</style>
+<style type="text/css" id="internal-style">
+        
+        /* modules */
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--modules/css/wiki/pagestagcloud/PagesTagCloudModule.css);
+
+
+        
+                
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--theme/base/css/style.css);
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--3e3a6f7dbcc9/common--theme/localize/css/style.css);
+                    @import url(http://z80-heaven.wdfiles.com/local--theme/localize-gray-new-links/style.css);
+            </style>
+    
+        
+        
+        
+    <link rel="shortcut icon" href="http://z80-heaven.wikidot.com/local--favicon/favicon.gif">
+    <link rel="icon" type="image/gif" href="http://z80-heaven.wikidot.com/local--favicon/favicon.gif">
+    
+            <link rel="apple-touch-icon" href="http://z80-heaven.wikidot.com/common--images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://z80-heaven.wikidot.com/common--images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="http://z80-heaven.wikidot.com/common--images/apple-touch-icon-114x114.png">
+        
+        
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()">
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-181937-8']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+    
+        <link rel="manifest" href="http://z80-heaven.wikidot.com/onesignal/manifest.json">
+    <script src="./Opcode Reference Chart - z80 Heaven_files/OneSignalSDK.js" acync=""></script><script src="./Opcode Reference Chart - z80 Heaven_files/OneSignalPageSDKES6.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: null,
+          });
+        });
+    </script>
+        
+<script src="./Opcode Reference Chart - z80 Heaven_files/ads-143.js"></script>
+</head><style id="global-dark-mode" media="screen"></style>
+<body id="html-body">
+<div id="skrollr-body">
+<a name="page-top"></a>
+<div id="navi-bar">
+  <a class="logo" href="http://www.wikidot.com/">
+    <span>Wikidot.com</span>
+  </a>
+  
+  <div class="new-site">
+    <form method="get" action="http://www.wikidot.com/new-site">
+      <input class="text empty" type="text" name="address" value="site-name">.wikidot.com
+    </form>
+  </div>
+  
+    <div class="share">
+    <span>Share on</span>
+    <a class="twitter" target="_blank" rel="nofollow" href="http://twitter.com/home?status=Opcode%20Reference%20Chart%20-%20z80%20Heaven+http%3A%2F%2Fz80-heaven.wikidot.com%2Fopcode-reference-chart" title="Share on Twitter"><img src="./Opcode Reference Chart - z80 Heaven_files/twitter.png" alt="twitter"></a>  
+    <a class="facebook" target="_blank" rel="nofollow" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fz80-heaven.wikidot.com%2Fopcode-reference-chart&amp;t=Opcode%20Reference%20Chart%20-%20z80%20Heaven" title="Share on Facebook"><img src="./Opcode Reference Chart - z80 Heaven_files/facebook.gif" alt="Facebook"></a>  
+    <a class="delicious" target="_blank" rel="nofollow" href="http://delicious.com/save" title="Share on Delicious"><img src="./Opcode Reference Chart - z80 Heaven_files/delicious.png" alt="Delicious"></a>
+    <a class="digg" target="_blank" rel="nofollow" href="http://digg.com/submit?url=http%3A%2F%2Fz80-heaven.wikidot.com%2Fopcode-reference-chart&amp;title=Opcode%20Reference%20Chart%20-%20z80%20Heaven" title="Post to Digg"><img src="./Opcode Reference Chart - z80 Heaven_files/digg.png" alt="Digg"></a>
+    <a class="reddit" href="http://www.reddit.com/submit?url=http%3A%2F%2Fz80-heaven.wikidot.com%2Fopcode-reference-chart" rel="nofollow" target="_blank" title="Post to Reddit"><img src="./Opcode Reference Chart - z80 Heaven_files/reddit.png" alt="Reddit" border="0"></a>
+    <a class="stumbleupon" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fz80-heaven.wikidot.com%2Fopcode-reference-chart" rel="nofollow" target="_blank" title="Post to StumbleUpon"><img src="./Opcode Reference Chart - z80 Heaven_files/stumble.png" alt="Reddit" border="0"></a>
+  </div>
+    
+      <a class="join" href="javascript:;" onclick="WIKIDOT.page.listeners.join(event, &#39;unified&#39;)">Join this site</a>
+    
+      <div class="action-buttons">
+      <a href="javascript:;" onclick="WIKIDOT.page.listeners.editClick(event)" title="Click here to edit contents of this page.">Edit</a>
+      <a href="javascript:;" onclick="WIKIDOT.page.listeners.historyClick(event)" title="Check out how this page has evolved in the past.">History</a>
+      <a href="javascript:;" onclick="WIKIDOT.page.listeners.editTags(event)" title="Edit tags for this page.">Tags</a>
+      <a href="javascript:;" onclick="WIKIDOT.page.listeners.viewSourceClick(event)" title="View wiki source for this page without editing.">Source</a>
+    </div>
+    
+  <a class="random-site" href="http://z80-heaven.wikidot.com/random-site.php" title="Go to a random Wikidot site.">Explore »</a>
+  </div>
+<div id="navi-bar-shadow">&nbsp;</div>
+
+
+<script type="text/javascript">
+  //<![CDATA[
+  $j(function(){
+    var uri = window.location.href;
+    var title = document.title
+    
+    $j('#navi-bar .share a').each(function(){
+      $t = $j(this);
+      var u = $t.attr('href');
+      u = u.replace(/TITLE/, encodeURIComponent(title)).replace(/URI/, encodeURIComponent(uri));
+      $t.attr('href', u);
+    });
+    
+    $j('#navi-bar .share .facebook').click(function(e){
+      window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(uri)+'&t='+encodeURIComponent(title),'sharer','toolbar=0,status=0,width=626,height=436');
+      e.preventDefault();
+    });
+    $j('#navi-bar .share .delicious').click(function(e){
+      window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550');
+      e.preventDefault();
+    });
+  });
+  
+	$j('#navi-bar .new-site form').submit(function(e){
+	  e.preventDefault();
+	  var $i = $j('#navi-bar .new-site form input.text');
+	  if($i.hasClass('empty')){
+	    	var w = new OZONE.dialogs.ErrorDialog();
+  			w.content = "You need to enter a valid web address for your new wiki.";
+  			w.show();
+  			return;
+    }
+    var siteName = $i.attr('value');
+    siteName = siteName.replace(/^\s+/, '').replace(/\s+$/,'');
+		var p = {};
+		p.action = 'wiki/special/NewWikiWidgetAction';
+		p.event = 'newWiki';
+		p.siteName = siteName;
+		OZONE.ajax.requestModule(null, p, function(r){
+		  if(r.status == 'site_exists'){
+		    window.location.href = 'http://' + siteName + '.' + URL_DOMAIN;
+		    return;
+		  }
+		  if(!WIKIDOT.utils.handleError(r)) {return;}
+  		// seems fine.
+  		window.location.href='http://'+URL_HOST+'/new-site/address/'+r.unixName;
+		});
+	});
+	$j('#navi-bar .new-site form input.text').focus(function(){
+	  var $t = $j(this);
+	  if($t.hasClass('empty')){
+	    $t.removeClass('empty');
+	    $t.attr('value', '');
+	  }
+	});
+	//]]>
+</script>
+
+
+        
+            <!-- side slide skyscraper -->
+
+<script type="text/javascript">
+$j( function(){
+var $c = $j('#container');
+var s = $j(window).width() - ($c.width()+$c.offset().left);
+var ri = s - 180;
+var $o = $j('#wad-tier3-side-slide');
+if( s > 200 ) {
+    $o.css('right', ri + 'px');
+    nads.createAd('wad-tier3-side-slide', {
+      "refreshLimit": 10,
+      "refreshTime": 85,
+      "sizes": [ [ 160, 600 ] ],
+      "report": {
+        "enabled": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      }
+          });
+} else {
+    $o.remove();
+}
+});
+</script>
+        
+    
+
+
+<div id="container-wrap-wrap">
+    <div id="container-wrap">
+        <div id="container">
+            <div id="header">
+              <h1><a href="http://z80-heaven.wikidot.com/"><span>z80 Heaven</span></a></h1>
+                
+                    <h2><span>A place for all the z80 info you'll want</span></h2>
+                
+                
+                <!-- google_ad_section_start(weight=ignore) -->
+                
+                <div id="search-top-box" class="form-search">
+    <form id="search-top-box-form" action="http://z80-heaven.wikidot.com/dummy" class="input-append">
+        <input id="search-top-box-input" class="text empty search-query" type="text" size="15" name="query" value="Search this site" onfocus="if(YAHOO.util.Dom.hasClass(this, &#39;empty&#39;)){YAHOO.util.Dom.removeClass(this,&#39;empty&#39;); this.value=&#39;&#39;;}"><input class="button btn" type="submit" name="search" value="Search">
+    </form>
+</div>
+                
+                
+                    <div id="top-bar">
+                        
+
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/start">Site Links</a>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/start">Welcome!</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:the-grand-scheme-of-things-read-first">Site Policies</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:contact-us">Contact info</a></li>
+<li><a href="http://z80-heaven.wikidot.com/external-links">External Links</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:list-all-pages">List of all Pages</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:tutorials#toc0">Basic Tutorials</a>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/getting-started-with-asm">Getting Started with Asm</a></li>
+<li><a href="http://z80-heaven.wikidot.com/z80-basics">z80 Basics</a></li>
+<li><a href="http://z80-heaven.wikidot.com/binary-decimal-and-hexadecimal">Binary, Decimal, and Hexadecimal</a></li>
+<li><a href="http://z80-heaven.wikidot.com/the-registers-and-memory">The Registers and Memory</a></li>
+<li><a href="http://z80-heaven.wikidot.com/control-structures">Control Structures</a></li>
+<li><a href="http://z80-heaven.wikidot.com/flags-and-bit-level-instructions">Flags and Bit-Level Instructions</a></li>
+<li><a href="http://z80-heaven.wikidot.com/input-and-output">Input and Output</a></li>
+<li><a href="http://z80-heaven.wikidot.com/data-manipulation-and-basic-math">Data Manipulation and Basic Math</a></li>
+<li><a href="http://z80-heaven.wikidot.com/the-stack">The Stack</a></li>
+<li><a href="http://z80-heaven.wikidot.com/floating-point-stuff">Floating-Point Variables</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:tutorials#toc11">Advanced Topics</a>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/direct-input-output">Direct Input/Output</a></li>
+<li><a href="http://z80-heaven.wikidot.com/tables">LUT/Jump Tables</a></li>
+<li><a href="http://z80-heaven.wikidot.com/grey-scale">Grey Scale</a></li>
+<li><a href="http://z80-heaven.wikidot.com/sprites">Sprites</a></li>
+<li><a href="http://z80-heaven.wikidot.com/advanced-math">Advanced Math</a></li>
+<li><a href="http://z80-heaven.wikidot.com/edit-buffers">Edit Buffers</a></li>
+<li><a href="http://z80-heaven.wikidot.com/shells">Shells</a></li>
+<li><a href="http://z80-heaven.wikidot.com/external">External Levels/Files</a></li>
+<li><a href="http://z80-heaven.wikidot.com/interrupts">Interrupts</a></li>
+<li><a href="http://z80-heaven.wikidot.com/ide">IDE's</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:tutorials#toc21">Flash Application Design</a>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/flash-applications">Intro to Flash Applications</a></li>
+<li><a href="http://z80-heaven.wikidot.com/fappheader">The Application Header</a></li>
+<li><a href="http://z80-heaven.wikidot.com/appcode">Application Programming</a></li>
+<li><a href="http://z80-heaven.wikidot.com/appvars">Application Variables (AppVars)</a></li>
+<li><a href="http://z80-heaven.wikidot.com/multipage">Multiple Page Apps</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:tutorials#toc27">Program Design</a>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/ideas">Ideas</a></li>
+<li><a href="http://z80-heaven.wikidot.com/coding">Coding</a></li>
+<li><a href="http://z80-heaven.wikidot.com/debugging">Debugging</a></li>
+<li><a href="http://z80-heaven.wikidot.com/optimization">Optimization</a></li>
+<li><a href="http://z80-heaven.wikidot.com/polishing-it-up">Polishing it up</a></li>
+<li><a href="http://z80-heaven.wikidot.com/post-work">Post Work</a></li>
+<li><a href="http://z80-heaven.wikidot.com/program-ideas">Program Ideas</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:tutorials#toc35">Useful Routines</a>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/linking">Linking</a></li>
+<li><a href="http://z80-heaven.wikidot.com/menus">Menus</a></li>
+<li><a href="http://z80-heaven.wikidot.com/misc">Misc.</a></li>
+<li><a href="http://z80-heaven.wikidot.com/sprite-routines">Sprite Routines</a></li>
+<li><a href="http://z80-heaven.wikidot.com/sound">Sound</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:appendices">Appendices</a>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/buffer-tables">Buffer Tables</a></li>
+<li><a href="http://z80-heaven.wikidot.com/character-maps">Character Maps</a></li>
+<li><a href="http://z80-heaven.wikidot.com/crashes">Crashes</a></li>
+<li><a href="http://z80-heaven.wikidot.com/directives">Directives</a></li>
+<li><a href="http://z80-heaven.wikidot.com/emulators">Emulators</a></li>
+<li><a href="http://z80-heaven.wikidot.com/error-codes">Error Codes</a></li>
+<li><a href="http://z80-heaven.wikidot.com/getcsc-codes">GetCSC Codes</a></li>
+<li><a href="http://z80-heaven.wikidot.com/getkey-codes">GetKey Codes</a></li>
+<li><a href="http://z80-heaven.wikidot.com/glossary">Glossary</a></li>
+<li><a href="http://z80-heaven.wikidot.com/instructions-set">Instructions Set</a></li>
+<li><a href="http://z80-heaven.wikidot.com/macros">Macros</a></li>
+<li><a href="http://z80-heaven.wikidot.com/opcode-reference-chart" class="current-link active">Opcode Reference Chart</a></li>
+<li><a href="http://z80-heaven.wikidot.com/ports">Ports</a></li>
+<li><a href="http://z80-heaven.wikidot.com/free-ram">RAM Areas</a></li>
+<li><a href="http://z80-heaven.wikidot.com/scan-codes">Scan Codes</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system-flags">System Flags</a></li>
+</ul>
+</li>
+<li><a href="http://z80-heaven.wikidot.com/forum:start">Discussion Forums</a></li>
+<li><a href="http://z80-heaven.wikidot.com/archives">File Archives **IN PROGRESS**</a></li>
+</ul>
+
+                    </div>
+                
+                <div id="login-status"><a href="javascript:;" onclick="WIKIDOT.page.listeners.createAccount(event)" class="login-status-create-account btn">Create account</a> <span>or</span> <a href="javascript:;" onclick="WIKIDOT.page.listeners.loginClick(event)" class="login-status-sign-in btn btn-primary">Sign in</a> </div>
+                <div id="header-extra-div-1"><span></span></div><div id="header-extra-div-2"><span></span></div><div id="header-extra-div-3"><span></span></div>
+            </div>
+            
+            <div id="content-wrap">
+                
+                    <div id="side-bar">
+                        
+
+
+                        
+
+<h2><span>Navigation</span></h2>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/start">Welcome page</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:the-grand-scheme-of-things-read-first">Site Policies</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:contact-us">Contact Info</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:tutorials">Tutorials</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:appendices">Appendices</a></li>
+<li><a href="http://z80-heaven.wikidot.com/forum:start">Discussion Forums</a></li>
+<li><a href="http://z80-heaven.wikidot.com/instructions-set">Instructions Set</a></li>
+</ul>
+<h2><span>External Links</span></h2>
+<ul>
+<li><a href="http://wikiti.brandonw.net/index.php?title=WikiTI_Home" target="_blank">WikiTI</a></li>
+<li><a href="http://www.ticalc.org/" target="_blank">TiCalc.org</a></li>
+<li><a href="http://tibasicdev.wikidot.com/" target="_blank">TI Basic Developer</a></li>
+</ul>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/external-links">Other Links...</a></li>
+</ul>
+<h2><span>Tool Box</span></h2>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:recent-changes">Recent changes</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:list-all-pages">List all pages</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:page-tags-list">Page Tags</a></li>
+<li><a href="http://www.wikidot.com/doc:wiki-syntax#toc12" target="_blank">Wikidot Syntax</a></li>
+<li><a href="http://z80-heaven.wikidot.com/admin:manage">Site Manager</a></li>
+</ul>
+<h2><span>Members</span></h2>
+<ul>
+<li><a href="http://z80-heaven.wikidot.com/system:join">How to join this site?</a></li>
+<li><a href="http://z80-heaven.wikidot.com/to-do">Todo list</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:members">Site members</a></li>
+<li><a href="http://z80-heaven.wikidot.com/system:invite">Invite a Friend</a></li>
+</ul>
+<h2><span>Page tags</span></h2>
+	<div class="pages-tag-cloud-box">
+									<a class="tag" href="http://z80-heaven.wikidot.com/system:page-tags/tag/programs" style="font-size: 80%; color: rgb(100, 100, 128);">programs</a>
+						</div>
+	
+
+<p style="text-align: center;"><span style="font-size:80%;"><a href="http://z80-heaven.wikidot.com/nav:side">edit this panel</a></span></p>
+
+                        
+
+
+                    </div>
+                
+                
+                <!-- google_ad_section_end -->
+                
+                <div id="main-content">
+                    <div id="action-area-top"></div>
+                    
+                    
+                        <div id="page-title">
+                            Opcode Reference Chart
+                        </div>
+                    
+
+                    
+
+                            
+            <!-- wikidot_top_728x90 -->
+<div id="wad-tier3-above-content" class="wd-adunit wd-ad-np wd-adunit-above_content"></div>
+<script type="text/javascript">
+nads.createAd('wad-tier3-above-content', {
+  "refreshLimit": 10,
+  "refreshTime": 94,
+  "sizes": [ [ 728, 90 ] ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+  });
+</script>
+        
+    
+
+
+                    <div id="page-content">
+                        
+
+<table style="margin:0; padding:0">
+<tbody><tr>
+<td style="margin:0; padding:0">
+<div id="toc">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc0">Primary</a></div>
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc1">xx80xx (ED)</a></div>
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc2">xxBITxx (CB)</a></div>
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc3">xxIXxx (DD)</a></div>
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc4">xxIYxx (FD)</a></div>
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc5">xxIXBITxx (DDCB)</a></div>
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc6">xxIYBITxx (FDCB)</a></div>
+<div style="margin-left: 2em;"><a href="http://z80-heaven.wikidot.com/opcode-reference-chart#toc7">Additional Information</a></div>
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+<p>This is an opcode reference chart for on-calculator programming and/or size optimizations.</p>
+<p>Rows are first nibble, columns are second.</p>
+<h2 id="toc0"><span>Primary</span></h2>
+<table class="wiki-content-table">
+<tbody><tr>
+<td></td>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+</tr>
+<tr>
+<th>0</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:nop">nop</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld bc,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (bc),a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlca">rlca</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ex">ex af,af'</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add hl,bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,(bc)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrca">rrca</a></td>
+</tr>
+<tr>
+<th>1</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:djnz">djnz x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld de,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (de),a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rla">rla</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jr">jr x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add hl,de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,(de)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rra">rra</a></td>
+</tr>
+<tr>
+<th>2</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jr">jr nz,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld hl,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (xx),hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:daa">daa</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jr">jr z,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add hl,hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld hl,(xx)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cpl">cpl</a></td>
+</tr>
+<tr>
+<th>3</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jr">jr nc,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld sp,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (xx),a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc sp</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:scf">scf</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jr">jr c,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add hl,sp</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,(xx)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec sp</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inc">inc a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:dec">dec a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ccf">ccf</a></td>
+</tr>
+<tr>
+<th>4</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld b,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld c,a</a></td>
+</tr>
+<tr>
+<th>5</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld d,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld e,a</a></td>
+</tr>
+<tr>
+<th>6</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld h,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld l,a</a></td>
+</tr>
+<tr>
+<th>7</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),l</a></td>
+<td><strong><a href="http://z80-heaven.wikidot.com/instructions-set:halt">halt</a></strong></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (hl),a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,a</a></td>
+</tr>
+<tr>
+<th>8</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,a</a></td>
+</tr>
+<tr>
+<th>9</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,a</a></td>
+</tr>
+<tr>
+<th>A</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor a</a></td>
+</tr>
+<tr>
+<th>B</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp a</a></td>
+</tr>
+<tr>
+<th>C</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret nz</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:pop">pop bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp nz,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call nz,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:push">push bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:add">add a,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 00h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret z</a></td>
+<td><strong><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret</a></strong></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp z,xx</a></td>
+<td><strong>xxBITxx</strong></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call z,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc a,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 08h</a></td>
+</tr>
+<tr>
+<th>D</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret nc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:pop">pop de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp nc,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (x),a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call nc,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:push">push de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sub">sub x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 10h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:exx">exx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp c,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in a,(x)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call c,xx</a></td>
+<td><strong>xxIXxx</strong></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc a,x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 18h</a></td>
+</tr>
+<tr>
+<th>E</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret po</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:pop">pop hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp po,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ex">ex (sp),hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call po,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:push">push hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:and">and x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 20h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret pe</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp pe,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ex">ex de,hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call pe,xx</a></td>
+<td><strong>xx80xx</strong></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:xor">xor x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 28h</a></td>
+</tr>
+<tr>
+<th>F</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret p</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:pop">pop af</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp p,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:di">di</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call p,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:push">push af</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:or">or x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 30h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ret">ret m</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld sp,hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:jp">jp m,xx</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ei">ei</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:call">call m,xx</a></td>
+<td><strong>xxIYxx</strong></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cp">cp x</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rst">rst 38h</a></td>
+</tr>
+</tbody></table>
+<h2 id="toc1"><span>xx80xx (ED)</span></h2>
+<table class="wiki-content-table">
+<tbody><tr>
+<td></td>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+</tr>
+<tr>
+<th>4</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in b,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc hl,bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (xx),bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:retn">retn</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:im">im 0</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld i,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in c,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc hl,bc</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld bc,(xx)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:reti">reti</a></td>
+<td></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld r,a</a></td>
+</tr>
+<tr>
+<th>5</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in d,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc hl,de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (xx),de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:retn">retn</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:im">im 1</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,i</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in e,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc hl,de</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld de,(xx)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:retn">retn</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:im">im 2</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld a,r</a></td>
+</tr>
+<tr>
+<th>6</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in h,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc hl,hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (xx),hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:retn">retn</a></td>
+<td></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrd">rrd</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in l,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc hl,hl</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld hl,(xx)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:retn">retn</a></td>
+<td></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rld">rld</a></td>
+</tr>
+<tr>
+<th>7</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in f,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),f</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sbc">sbc hl,sp</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld (xx),sp</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:retn">retn</a></td>
+<td></td>
+<td></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:in">in a,(c)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:out">out (c),a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:adc">adc hl,sp</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ld">ld sp,(xx)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:neg">neg</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:reti">reti</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>A</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ldi">ldi</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cpi">cpi</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ini">ini</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:outi">outi</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ldd">ldd</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cpd">cpd</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ind">ind</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:outd">outd</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>B</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:ldir">ldir</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cpir">cpir</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:inir">inir</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:otir">otir</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:lddr">lddr</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:cpdr">cpdr</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:indr">indr</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:otdr">otdr</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="toc2"><span>xxBITxx (CB)</span></h2>
+<p>Blank spaces or spaces not listed function like NOP.</p>
+<table class="wiki-content-table">
+<tbody><tr>
+<td></td>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+</tr>
+<tr>
+<th>0</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rlc">rlc a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rrc">rrc a</a></td>
+</tr>
+<tr>
+<th>1</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rl">rl a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:rr">rr a</a></td>
+</tr>
+<tr>
+<th>2</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sla">sla a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sra">sra a</a></td>
+</tr>
+<tr>
+<th>3</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:sll">sll a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl (hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:srl">srl a</a></td>
+</tr>
+<tr>
+<th>4</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 0,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 1,a</a></td>
+</tr>
+<tr>
+<th>5</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 2,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 3,a</a></td>
+</tr>
+<tr>
+<th>6</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 4,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 5,a</a></td>
+</tr>
+<tr>
+<th>7</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 6,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:bit">bit 7,a</a></td>
+</tr>
+<tr>
+<th>8</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 0,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 1,a</a></td>
+</tr>
+<tr>
+<th>9</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 2,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 3,a</a></td>
+</tr>
+<tr>
+<th>A</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 4,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 5,a</a></td>
+</tr>
+<tr>
+<th>B</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 6,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:res">res 7,a</a></td>
+</tr>
+<tr>
+<th>C</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 0,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 1,a</a></td>
+</tr>
+<tr>
+<th>D</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 2,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 3,a</a></td>
+</tr>
+<tr>
+<th>E</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 4,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 5,a</a></td>
+</tr>
+<tr>
+<th>F</th>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 6,a</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,b</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,c</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,d</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,e</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,h</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,l</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,(hl)</a></td>
+<td><a href="http://z80-heaven.wikidot.com/instructions-set:set">set 7,a</a></td>
+</tr>
+</tbody></table>
+<h2 id="toc3"><span>xxIXxx (DD)</span></h2>
+<p>If the next byte is CB, it will follow <strong>xxIXBITxx</strong>, described later below. If the next byte is DD, ED, or FD, the current DD (the <strong>xxIXxx</strong>) will be ignored (functions like <a href="http://z80-heaven.wikidot.com/instructions-set:nop">NOP</a>).</p>
+<p>Functions like the primary table, except each instance of hl is replaced with ix, h with ixh, and l with ixl, except in the case of (hl). (hl) will be replaced by (ix+x), where x is an 8-bit displacement, and all other <strong>h</strong> and <strong>l</strong> are unaffected. For example, ld ixh, (ix+x) is not an instruction, but ld h, (ix+x) is.</p>
+<h2 id="toc4"><span>xxIYxx (FD)</span></h2>
+<p>Same as <strong>xxIXxx</strong>, but instead with IY, IYH, and IYL.</p>
+<h2 id="toc5"><span>xxIXBITxx (DDCB)</span></h2>
+<p>Functions like <strong>xxBITxx</strong>, but instead applying the bitwise operations to (ix+x), then if the instruction wasn't BIT return the result to the register if it is not (hl). For example, rlc b becomes rlc (ix+x)-&gt;b.</p>
+<h2 id="toc6"><span>xxIYBITxx (FDCB)</span></h2>
+<p>Same as <strong>xxIXBITxx</strong>, but instead with IY, IYH, and IYL.</p>
+<h2 id="toc7"><span>Additional Information</span></h2>
+<p>Most of the instructions have more information <a href="http://z80-heaven.wikidot.com/instructions-set">here</a>, or click on the instruction.</p>
+<p><strong>Source:</strong><br>
+<strong>Primary, xx80xx, xxBITxx:</strong> Xeda Elnara, aka Zeda<br>
+<strong>xxIXxx, xxIYxx, xxIXBITxx, xxIYBITxx:</strong> www.z80.info/decoding.htm</p>
+
+                    </div>
+
+                            
+            <!-- wikidot_bottom_300x250 -->
+<div id="wad-tier3-below-content" class="wd-adunit wd-ad-np wd-adunit-below_content"></div>
+<script type="text/javascript">
+nads.createAd('wad-tier3-below-content', {
+  "refreshLimit": 10,
+  "refreshTime": 83,
+  "sizes": [ [ 300, 250 ] ],
+  "report": {
+    "enabled": true,
+    "wording": "Report Ad",
+    "position": "bottom-right"
+  }
+  });
+</script>
+        
+    
+
+                            
+            <!-- mobile bottom 320x50 -->
+<script type="text/javascript">
+
+$j( function(){
+
+    if(isUAMobile && screen.width < 400 && screen.height > 600) {
+        var $o = $j('<div id="wad-tier3-mobile-anchor" class="wd-adunit wd-ad-np wd-adunit-mobile_anchor"></div>');
+        $j('body').append($o);
+        $j('body').css('margin-bottom', '200px');
+
+        var res = function(){
+            $o = $j('#wad-tier3-mobile-anchor');
+            if($o.length > 0){
+                $o.show();
+                var $w = $j(window);
+                var scale = $w.width() / 320;
+                $o.css('transform', 'scale('+scale+')');
+            } else {
+                $o.hide();
+            }
+        }
+
+        res();
+        setInterval(res, 1000);
+
+        nads.createAd('wad-tier3-mobile-anchor', {
+          "refreshLimit": 1,
+          "refreshTime": 90,
+          "format": "display",
+          "sizes": [ [ 320, 50 ] ],
+          "report": {
+            "enabled": true,
+            "wording": "Report Ad",
+            "position": "bottom-right"
+          }
+                  });
+    }
+});
+</script>
+        
+    
+
+
+                    
+
+                    <div id="page-info-break"></div>
+                    
+                        <div id="page-options-container">
+                            <div id="page-info">page revision: 6, last edited: <span class="odate time_1452137886 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29" style="display: inline;">7 Jan 2016, 05:38 (1649 days ago)</span></div>
+            <div id="page-options-bottom" class="page-options-bottom">
+            <a href="javascript:;" class="btn btn-default" id="edit-button">Edit</a>
+<a href="javascript:;" class="btn btn-default" id="tags-button">Tags</a>
+<a href="http://z80-heaven.wikidot.com/forum/t-9297471/opcode-reference-chart" class="btn btn-default" id="discuss-button">Discuss (0)</a>
+<a href="javascript:;" class="btn btn-default" id="history-button">History</a>
+<a href="javascript:;" class="btn btn-default" id="files-button">Files</a>
+<a href="javascript:;" class="btn btn-default" id="print-button">Print</a>
+<a href="javascript:;" class="btn btn-default" id="site-tools-button">Site tools</a>
+<a href="javascript:;" class="btn btn-default" id="more-options-button">+&nbsp;Options</a> 
+</div>
+<div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
+    <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-append-button">Append</a>
+    <a href="javascript:;" class="btn btn-default" id="edit-meta-button">Edit Meta</a>
+    <a href="javascript:;" class="btn btn-default" id="watchers-button">Watchers</a> 
+    <a href="javascript:;" class="btn btn-default" id="backlinks-button">Backlinks</a> 
+    <a href="javascript:;" class="btn btn-default" id="view-source-button">Page Source</a> 
+    <a href="javascript:;" class="btn btn-default" id="parent-page-button">Parent</a> 
+    <a href="javascript:;" class="btn btn-default" id="page-block-button">Lock Page</a>    
+    <a href="javascript:;" class="btn btn-default" id="rename-move-button">Rename</a> 
+    <a href="javascript:;" class="btn btn-default" id="delete-button">Delete</a> 
+</div>
+<div id="page-options-area-bottom">
+</div>
+
+                        </div>
+                    
+                    <div id="action-area" style="display: none;"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="footer" style="display: block; visibility: visible;">
+                <div class="options" style="display: block; visibility: visible;">
+    <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+    &nbsp;|
+    <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+    &nbsp;|
+    <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+    &nbsp;|
+    <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+</div>
+Powered by <a href="http://www.wikidot.com/">Wikidot.com</a> 
+            </div>
+            
+                <div id="license-area" class="license-area">
+                    Unless otherwise stated, the content of this page is licensed under  
+<a href="http://www.gnu.org/copyleft/fdl.html" title="http://www.gnu.org/copyleft/fdl.html" rel="license">GNU 
+Free Documentation License</a>.
+                </div>
+            
+            
+            
+
+
+
+            <div id="extrac-div-1"><span></span></div><div id="extrac-div-2"><span></span></div><div id="extrac-div-3"><span></span></div>
+            
+            
+            
+            
+                <div id="footer-bar">
+  <div>
+     </div>
+  <h2>Other interesting sites</h2>
+  
+  <div class="units">
+              <div class="unit">
+          <div class="inner">
+            <a target="_blank" class="image" href="http://gamemaker.wikidot.com/">
+              <img class="thumbnail" alt="" src="./Opcode Reference Chart - z80 Heaven_files/80.jpg">
+            </a>
+            <h3><a target="_blank" href="http://gamemaker.wikidot.com/">GameMaker: Studio Wiki</a></h3>
+            <div class="desc">          
+              GameMaker: Studio Tutorials &amp; Resources
+            </div>
+          </div>
+        </div>
+              <div class="unit">
+          <div class="inner">
+            <a target="_blank" class="image" href="http://rmitvnim2007b.wikidot.com/">
+              <img class="thumbnail" alt="" src="./Opcode Reference Chart - z80 Heaven_files/80(1).jpg">
+            </a>
+            <h3><a target="_blank" href="http://rmitvnim2007b.wikidot.com/">RMIT Vietnam IM 2007B</a></h3>
+            <div class="desc">          
+              
+            </div>
+          </div>
+        </div>
+              <div class="unit">
+          <div class="inner">
+            <a target="_blank" class="image" href="http://machinima138.wikidot.com/">
+              <img class="thumbnail" alt="" src="./Opcode Reference Chart - z80 Heaven_files/80(2).jpg">
+            </a>
+            <h3><a target="_blank" href="http://machinima138.wikidot.com/">Machinima 138</a></h3>
+            <div class="desc">          
+              
+            </div>
+          </div>
+        </div>
+              <div class="unit">
+          <div class="inner">
+            <a target="_blank" class="image" href="http://l4dmapdb.com/">
+              <img class="thumbnail" alt="" src="./Opcode Reference Chart - z80 Heaven_files/80(3).jpg">
+            </a>
+            <h3><a target="_blank" href="http://l4dmapdb.com/">L4D Map Database</a></h3>
+            <div class="desc">          
+              L4DMapDB.com
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+
+            
+        </div>
+        
+    </div>
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<div id="extra-div-1"><span></span></div><div id="extra-div-2"><span></span></div><div id="extra-div-3"><span></span></div>
+<div id="extra-div-4"><span></span></div><div id="extra-div-5"><span></span></div><div id="extra-div-6"><span></span></div>
+</div>
+
+
+
+
+</div>
+<div id="dummy-ondomready-block" style="display: none;"></div>
+    <!-- Google Analytics load -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Quantcast -->
+    <script type="text/javascript">
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    
+</div>
+<div id="page-options-bottom-2-tips" style="display: none;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            
+        
+        
+        
+        
+    </div>
+
+<div id="odialog-hovertips" style="position: absolute; z-index: 100; top: 0px; width: 100%;"><div id="edit-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Click here to edit contents of this page.    </div></div><div id="edit-sections-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an "edit" link when available.    </div></div><div id="edit-append-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Append content without editing the whole page source.    </div></div><div id="history-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Check out how this page has evolved in the past.    </div></div><div id="discuss-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div></div><div id="files-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        View and manage file attachments for this page.    </div></div><div id="site-tools-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        A few useful tools to manage this Site.    </div></div><div id="backlinks-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        See pages that link to and include this page.    </div></div><div id="rename-move-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Change the name (also URL address, possibly the category) of the page.    </div></div><div id="view-source-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        View wiki source for this page without editing.    </div></div><div id="parent-page-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div></div><div id="abuse-report-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Notify administrators if there is objectionable content in this page.        </div></div><div id="bug-report-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Something does not work as expected? Find out what you can do.        </div></div><div id="wikidot-help-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            General Wikidot.com documentation and help section.        </div></div><div id="wikidot-tos-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div></div><div id="wikidot-privacy-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Wikidot.com Privacy Policy.          
+        </div></div></div></body></html>
