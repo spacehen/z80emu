@@ -1,3 +1,6 @@
+// Copyright (C) 
+// Author: Dylan Muller
+
 import {fstat, readFile, readFileSync, existsSync, exists } from "fs";
 import {Z80, Instruction} from "./z80"
 
